@@ -11,24 +11,32 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author soblab
+ * @author Suleman Ali
  */
 class Senior extends Student {
-     public Senior(String name, short age, int numCredits){
+    /**
+     * sends message if credits less than 85
+     * @param name
+     * @param age
+     * @param numCredits 
+     */
+    public Senior(String name, short age, int numCredits) {
         super(name, age, numCredits);
-        if(numCredits < 85)
+        if (numCredits < 85)
              try {
-                 throw new Exception();
+            throw new Exception();
         } catch (Exception ex) {
-                 System.out.println("Invalid number of credits for Senior");
+            System.out.println("Invalid number of credits for Senior");
         }
     }
-     
-     
-     @Override
-    public String toString(){
-        return "The name of this Senior is: " + this.getName() 
-                + "\nThe student's age is: " + this.getAge() 
+    /**
+     * toString for Senior class
+     * @return 
+     */
+    @Override
+    public String toString() {
+        return "The name of this Senior is: " + this.getName()
+                + "\nThe student's age is: " + this.getAge()
                 + "\nThe student has " + this.getNumCredits() + " credits completed"
                 + "\nThe student has a gpa of: " + this.getGpa()
                 + "\n-----------------------------------------------";

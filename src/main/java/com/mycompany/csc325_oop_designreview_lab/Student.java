@@ -14,7 +14,6 @@ public class Student extends Human {
     // ToDo 2: Fix the resulting errors - DONE
     // ToDo 3: Add a field for GPA and create setter and getter - DONE
     // ToDo 4: Add comments to your code - DONE
-    //instance variable gpa established
     private double gpa;
 
     protected int numCredits;
@@ -51,7 +50,7 @@ public class Student extends Human {
     }
 
     /**
-     * 
+     *
      * @return student GPA
      */
     public double getGpa() {
@@ -60,14 +59,15 @@ public class Student extends Human {
 
     /**
      * sets GPA
-     * @param gpa 
+     *
+     * @param gpa
      */
     public void setGpa(double gpa) {
         this.gpa = gpa;
     }
 
     /**
-     * 
+     *
      * @return returns address field
      */
     @Override
@@ -77,7 +77,8 @@ public class Student extends Human {
 
     /**
      * sets address field
-     * @param address 
+     *
+     * @param address
      */
     @Override
     public void setAddress(String address) {
